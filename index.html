@@ -414,11 +414,9 @@
       <section class="footer-subscribe">
         <h2 class="footer-title-subscribe">Підпишіться на розсилку</h2>
 
-        <form name="footer-subscribe" autocomplete="on" >
-          <label>
-            <input type="email" name="email" placeholder="E-mail">
+        <form name="footer-subscribe-form" autocomplete="on" >
 
-          </label>
+          <input class="footer-subscribe-input" type="email" name="email" placeholder="E-mail">
 
           <button type="submit" class="subscribe-button">
             <span class="subscribe-button-text">Підписатися</span>
@@ -428,10 +426,7 @@
           </button>
         </form>
 
-        
       </section>
-
-
 
     </div>
   </footer>
@@ -449,14 +444,13 @@
       <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
       <form class="modal-form">
 
-        <label class="modal-form-label">
+        <label class="modal-form-label"><!-- label -->
           <span class="modal-label-title">Ім'я</span>
           <input class="modal-form-input" type="text"  name="user_name" placeholder=" " />
           <svg class="modal-form-icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-user"></use>
           </svg>
         </label>
-
         <label class="modal-form-label">
           <span class="modal-label-title">Телефон</span>
           <input class="modal-form-input" type="text"  name="user_tel" placeholder=" " />
@@ -464,7 +458,6 @@
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
         </label>
-
         <label class="modal-form-label">
           <span class="modal-label-title">Пошта</span>
           <input class="modal-form-input" type="text"  name="user_email" placeholder=" " />
@@ -473,15 +466,20 @@
           </svg>
         </label>
 
-        <label class="modal-form-label">
+        <label class="modal-form-label"><!-- textarea -->
           <span class="modal-label-title">Коментар</span>
-          <textarea class="modal-form-textarea" name="feedback" ></textarea>
+          <textarea class="modal-form-textarea" name="feedback" placeholder="Введіть текст" ></textarea>
         </label>
 
-        <button class="modal-send-button" type="submit"><span class="send-button-text">Відправити</span></button>
-
+        <!-- inputcheck -->
+        <input class="modal-form-inputcheck is-hidden" type="checkbox" name="accept" value="true" id="check" />
+        <label class="check-text" for="check">
+          &nbsp; Погоджуюся з розсилкою та приймаю &nbsp;
+          <a class="check-link" href="">Умови договору<a>
+        </label>
         
-
+        <!-- button -->
+        <button class="modal-send-button" type="submit"><span class="send-button-text">Відправити</span></button>
 
       </form>
     </div>
