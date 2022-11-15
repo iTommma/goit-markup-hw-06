@@ -249,12 +249,17 @@ footer .logo {
   color: var(--accent-color);
 }
 
-/* ---------------FOOTER join */
-
-.footer-join {
+/* ---------------FOOTER join and subscribe*/
+.footer-items {
   padding-top: 12px;
+  width: 100%;
+
+  display: inline-flex;
+  justify-content: space-between;
+
 }
 
+/* ---------------FOOTER join */
 .footer-title-join {
   font-weight: var(--font-weight-700);
   font-size: var(--font-size-14);
@@ -268,11 +273,6 @@ footer .logo {
 }
 
 /* ---------------FOOTER subscribe */
-.footer-subscribe {
-  width: 570px;
-  height: 86px;
-  padding-top: 12px;
-}
 
 .footer-title-subscribe {
   font-weight: var(--font-weight-700);
@@ -288,6 +288,9 @@ footer .logo {
 
 .footer-subscribe-form {
   display: flex;
+  justify-content: center;
+  gap: 12px; /* не працює геп */
+  
 }
 
 .footer-subscribe-input {
@@ -300,9 +303,7 @@ footer .logo {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   padding-left: 16px;
-  display: flex;
-  align-items: center;
-  ;
+  margin-right: 12px;
 }
 
 .footer-subscribe-input::placeholder {
@@ -322,7 +323,7 @@ footer .logo {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
